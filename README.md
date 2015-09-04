@@ -1,6 +1,6 @@
 # has-glob [![NPM version](https://badge.fury.io/js/has-glob.svg)](http://badge.fury.io/js/has-glob)
 
-> Return true if an array has a glob pattern.
+> Returns `true` if an array has a glob pattern.
 
 Also get [is-glob](https://www.npmjs.com/package/is-glob) for checking strings for glob patterns.
 
