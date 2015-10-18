@@ -33,14 +33,11 @@ describe('hasGlob', function () {
     assert(hasGlob(['foo', 'bar', 'abc/+(a).js']));
     assert(hasGlob(['foo', 'bar', 'abc/*(a).js']));
     assert(hasGlob(['foo', 'bar', 'abc/?(a).js']));
-  });
-
-  it('should return `true` if it has extglob characters:', function () {
-    assert(hasGlob(['foo', 'bar', 'abc/@.js']));
-    assert(hasGlob(['foo', 'bar', 'abc/!.js']));
-    assert(hasGlob(['foo', 'bar', 'abc/+.js']));
-    assert(hasGlob(['foo', 'bar', 'abc/*.js']));
-    assert(hasGlob(['foo', 'bar', 'abc/?.js']));
+    assert(hasGlob(['foo', 'bar', 'abc/@(.js)']));
+    assert(hasGlob(['foo', 'bar', 'abc/!(.js)']));
+    assert(hasGlob(['foo', 'bar', 'abc/+(.js)']));
+    assert(hasGlob(['foo', 'bar', 'abc/*(.js)']));
+    assert(hasGlob(['foo', 'bar', 'abc/?(.js)']));
   });
 
   it('should return `true` if a path has regex characters:', function () {
