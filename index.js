@@ -9,10 +9,18 @@
 
 var isGlob = require('is-glob');
 
-module.exports = function hasGlob(arr) {
- if (arr == null) return false;
- if (!Array.isArray(arr)) arr = [arr];
- var len = arr.length;
- while (len--) if (isGlob(arr[len])) return true;
- return false;
+module.exports = function hasGlob(val) {
+  if (val == null) return false;
+  if (typeof val === 'string') {
+    return isGlob(val);
+  }
+  if (Array.isArray(val)) {
+    var len = val.length;
+    while (len--) {
+      if (isGlob(val[len])) {
+        return true;
+      }
+    }
+  }
+  return false;
 };
