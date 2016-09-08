@@ -23,6 +23,7 @@
     "is-glob": "^3.0.0"
   },
   "devDependencies": {
+    "gulp-format-md": "^0.1.10",
     "mocha": "*"
   },
   "keywords": [
@@ -30,11 +31,12 @@
     "braces",
     "check",
     "exec",
-    "extglob",
     "expression",
+    "extglob",
     "glob",
     "globbing",
     "globstar",
+    "has",
     "match",
     "matches",
     "pattern",
@@ -46,11 +48,27 @@
   "verb": {
     "related": {
       "list": [
-        "is-glob",
-        "micromatch",
         "has-glob",
-        "is-valid-glob"
+        "is-glob",
+        "is-negated-glob",
+        "is-valid-glob",
+        "micromatch"
       ]
-    }
+    },
+    "toc": false,
+    "layout": "default",
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "lint": {
+      "reflinks": true
+    },
+    "reflinks": [
+      "verb",
+      "verb-generate-readme"
+    ]
   }
 }

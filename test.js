@@ -1,4 +1,6 @@
-/* deps: mocha */
+'use strict';
+
+require('mocha');
 var assert = require('assert');
 var hasGlob = require('./');
 
