@@ -20,7 +20,7 @@
     "test": "mocha"
   },
   "dependencies": {
-    "is-glob": "^2.0.1"
+    "is-glob": "^3.0.0"
   },
   "devDependencies": {
     "mocha": "*"
