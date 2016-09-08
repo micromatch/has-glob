@@ -1,7 +1,7 @@
 {
   "name": "has-glob",
   "description": "Returns `true` if an array has a glob pattern.",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "homepage": "https://github.com/jonschlinkert/has-glob",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "jonschlinkert/has-glob",
@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "gulp-format-md": "^0.1.10",
-    "mocha": "*"
+    "mocha": "^3.0.2"
   },
   "keywords": [
     "bash",
